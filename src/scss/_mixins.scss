@@ -1,0 +1,18 @@
+@import "break-points";
+
+@mixin breakpoint($selectedBreakpoint) {
+  @each $breakpoint, $size in $breakpoints {
+
+    @if $selectedBreakpoint == $breakpoint {
+      @media screen and (min-width: $size) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin setTransform($value) {
+  -webkit-transform: $value;
+  -ms-transform: $value;
+  transform: $value;
+}
