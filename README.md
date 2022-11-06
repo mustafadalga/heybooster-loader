@@ -1,35 +1,93 @@
-# heybooster-loader
+# Heybooster Loader
 
-This template should help get you started developing with Vue 3 in Vite.
+**A plugin developed with Vue 3 and vite.js.**
 
-## Recommended IDE Setup
+<p align="center">
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+[![vue version](https://img.shields.io/npm/v/heybooster-loader.svg)](https://www.npmjs.com/package/heybooster-loader)
+[![vue version](https://img.shields.io/badge/vue-3.2-brightgreen.svg)](https://www.npmjs.com/package/heybooster-loader)
 
-## Customize configuration
+</p>
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+## Installing
 
-```sh
-npm install
+### Package manager
+
+Using npm:
+
+```bash
+npm install heybooster-loader
 ```
 
-### Compile and Hot-Reload for Development
+Then, import and register the component:
 
-```sh
-npm run dev
+
+## Global Registration
+
+main.js
+```
+import Loader from "heybooster-loader";
+import "heybooster-loader/style.css"
+
+app.use(Loader);
 ```
 
-### Compile and Minify for Production
+## Local Registration
 
-```sh
-npm run build
+* Composition Api
+
+```
+<script setup>
+import { Loader } from "heybooster-loader";
+import "heybooster-loader/style.css";
+</script>
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+* Options Api
+```
+import { Loader } from "heybooster-loader";
+import "heybooster-loader/style.css";
 
-```sh
-npm run lint
+export default {
+  components: {
+    Loader
+  },
+}
+```
+
+
+## Usage
+
+
+* Example 1
+```
+<template>
+  <main>
+    <Loader>
+      <template #description>
+        <span>Please Wait...</span>
+      </template>
+    </Loader>
+  </main>
+</template>
+```
+* Example 2
+
+```
+<template>
+  <main>
+    <Loader/> 
+  </main>
+</template>
+```
+
+* Example 3
+
+```
+<template>
+  <main>
+    <Loader icon="my-icon.svg"/> 
+  </main>
+</template>
 ```
