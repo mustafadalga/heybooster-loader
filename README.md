@@ -93,6 +93,8 @@ export default {
 ```
 
 
+# Demo
+* https://heybooster-loader.netlify.app/ 
 
 ## License
 [![License](https://img.shields.io/badge/LICENSE-GPL--3.0-orange)](https://github.com/mustafadalga/heybooster-loader/blob/main/LICENSE)
