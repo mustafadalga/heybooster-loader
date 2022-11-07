@@ -38,6 +38,7 @@
     "css-spinner"
   ],
   "dependencies": {
+    "@mustafadalga/loading-spinner": "^0.0.2",
     "vue": "^3.2.41"
   },
   "devDependencies": {

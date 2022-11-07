@@ -1,9 +1,8 @@
 import { createApp } from 'vue'
-import LoaderPlugin from "@/LoaderPlugin";
 import App from './App.vue'
-
-
+import Loader from "@mustafadalga/loading-spinner";
+import "@mustafadalga/loading-spinner/style.css"
 const app = createApp(App);
 
-app.use(LoaderPlugin).mount('#app')
+app.use(Loader).mount('#app')
 
