@@ -113,7 +113,7 @@ import icon from './assets/icons/icon.svg'
 
 
 # Demo
-* https://loading-spinner.netlify.app/ 
+* https://loading-component.netlify.app/
 
 ## License
 [![License](https://img.shields.io/badge/LICENSE-GPL--3.0-orange)](https://github.com/mustafadalga/loading-spinner/blob/main/LICENSE)
