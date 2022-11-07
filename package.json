@@ -1,5 +1,5 @@
 {
-  "name": "loading-component",
+  "name": "@mustafadalga/loading-spinner",
   "version": "0.0.1",
   "type": "module",
   "exports": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mustafadalga/loading-component"
+    "url": "https://github.com/mustafadalga/loading-spinner"
   },
   "files": [
     "dist"
@@ -26,6 +26,8 @@
   "keywords": [
     "loading-component",
     "loader-component",
+    "loading-spinner",
+    "loader-spinner",
     "loader",
     "loaders",
     "loading",

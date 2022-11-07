@@ -4,8 +4,8 @@
 
 <p align="center">
 
-[![vue version](https://img.shields.io/npm/v/loading-component.svg)](https://www.npmjs.com/package/loading-componentr)
-[![vue version](https://img.shields.io/badge/vue-3.2-brightgreen.svg)](https://www.npmjs.com/package/loading-componentr)
+[![vue version](https://img.shields.io/npm/v/@mustafadalga/loading-spinner.svg)](https://www.npmjs.com/package/@mustafadalga/loading-spinner)
+[![vue version](https://img.shields.io/badge/vue-3.2-brightgreen.svg)](https://www.npmjs.com/package/@mustafadalga/loading-spinner)
 
 </p>
 
@@ -17,7 +17,7 @@
 Using npm:
 
 ```bash
-npm install loading-component
+npm install @mustafadalga/loading-spinner
 ```
 
 Then, import and register the component:
@@ -27,8 +27,8 @@ Then, import and register the component:
 
 main.js
 ```
-import Loader from "loading-component";
-import "loading-component/style.css"
+import Loader from "@mustafadalga/loading-spinner";
+import "@mustafadalga/loading-spinner/style.css"
 
 app.use(Loader);
 ```
@@ -39,15 +39,15 @@ app.use(Loader);
 
 ```
 <script setup>
-import { Loader } from "loading-component";
-import "loading-component/style.css";
+import { Loader } from "@mustafadalga/loading-spinner";
+import "@mustafadalga/loading-spinner/style.css";
 </script>
 ```
 
 * Options Api
 ```
-import { Loader } from "loading-component";
-import "loading-component/style.css";
+import { Loader } from "@mustafadalga/loading-spinner";
+import "@mustafadalga/loading-spinner/style.css";
 
 export default {
   components: {
@@ -113,7 +113,7 @@ import icon from './assets/icons/icon.svg'
 
 
 # Demo
-* https://loading-component.netlify.app/ 
+* https://loading-spinner.netlify.app/ 
 
 ## License
-[![License](https://img.shields.io/badge/LICENSE-GPL--3.0-orange)](https://github.com/mustafadalga/loading-component/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/LICENSE-GPL--3.0-orange)](https://github.com/mustafadalga/loading-spinner/blob/main/LICENSE)
