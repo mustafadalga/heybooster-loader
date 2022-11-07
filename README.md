@@ -1,11 +1,11 @@
-# Heybooster Loader
+# Loading Component 
 
 **A plugin developed with Vue 3 and vite.js.**
 
 <p align="center">
 
-[![vue version](https://img.shields.io/npm/v/heybooster-loader.svg)](https://www.npmjs.com/package/heybooster-loader)
-[![vue version](https://img.shields.io/badge/vue-3.2-brightgreen.svg)](https://www.npmjs.com/package/heybooster-loader)
+[![vue version](https://img.shields.io/npm/v/loading-component.svg)](https://www.npmjs.com/package/loading-componentr)
+[![vue version](https://img.shields.io/badge/vue-3.2-brightgreen.svg)](https://www.npmjs.com/package/loading-componentr)
 
 </p>
 
@@ -17,7 +17,7 @@
 Using npm:
 
 ```bash
-npm install heybooster-loader
+npm install loading-component
 ```
 
 Then, import and register the component:
@@ -27,8 +27,8 @@ Then, import and register the component:
 
 main.js
 ```
-import Loader from "heybooster-loader";
-import "heybooster-loader/style.css"
+import Loader from "loading-component";
+import "loading-component/style.css"
 
 app.use(Loader);
 ```
@@ -39,15 +39,15 @@ app.use(Loader);
 
 ```
 <script setup>
-import { Loader } from "heybooster-loader";
-import "heybooster-loader/style.css";
+import { Loader } from "loading-component";
+import "loading-component/style.css";
 </script>
 ```
 
 * Options Api
 ```
-import { Loader } from "heybooster-loader";
-import "heybooster-loader/style.css";
+import { Loader } from "loading-component";
+import "loading-component/style.css";
 
 export default {
   components: {
@@ -58,26 +58,37 @@ export default {
 
 
 ## Usage
-
-
-* Example 1
+* Example 1 
 ```
+<script setup>
+import icon from './assets/icons/icon.svg'
+</script>
+
 <template>
   <main>
-    <Loader>
-      <template #description>
-        <span>Please Wait...</span>
-      </template>
-    </Loader>
+    <Loader :icon="icon"/> 
   </main>
 </template>
 ```
+
 * Example 2
 
 ```
+<script>
+import icon from './assets/icons/icon.svg'
+
+export default {
+  data () {
+    return {
+      icon: icon
+    }
+  }
+}
+</script>
+
 <template>
   <main>
-    <Loader/> 
+    <Loader :icon="icon"/> 
   </main>
 </template>
 ```
@@ -85,16 +96,24 @@ export default {
 * Example 3
 
 ```
+<script setup>
+import icon from './assets/icons/icon.svg'
+</script>
+
 <template>
   <main>
-    <Loader icon="my-icon.svg"/> 
+    <Loader :icon="icon">
+      <template #description>
+        Please Wait...
+      </template>
+    </Loader>
   </main>
 </template>
 ```
 
 
 # Demo
-* https://heybooster-loader.netlify.app/ 
+* https://loading-component.netlify.app/ 
 
 ## License
-[![License](https://img.shields.io/badge/LICENSE-GPL--3.0-orange)](https://github.com/mustafadalga/heybooster-loader/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/LICENSE-GPL--3.0-orange)](https://github.com/mustafadalga/loading-component/blob/main/LICENSE)
