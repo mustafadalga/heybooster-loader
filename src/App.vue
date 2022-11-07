@@ -1,6 +1,10 @@
+<script setup>
+import icon from './assets/icons/icon.svg'
+</script>
+
 <template>
   <div>
-    <Loader>
+    <Loader :icon="icon">
       <template #description>
         Please Wait...
       </template>

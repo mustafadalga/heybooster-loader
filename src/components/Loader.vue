@@ -2,13 +2,9 @@
 const props = defineProps({
   icon: {
     type: String,
-    default: "icon.svg"
+    required: true
   },
 })
-
-function getImageUrl (file) {
-  return new URL(`../assets/icons/${file}`, import.meta.url).href;
-}
 </script>
 
 
@@ -17,7 +13,7 @@ function getImageUrl (file) {
 
     <div :class="$style.animation">
 
-      <img :src="getImageUrl(props.icon)" :class="$style.icon" alt="Loader" title="Loader">
+      <img :src="props.icon" :class="$style.icon" alt="Loader" title="Loader">
       <div v-for="index in 12"
            :key="index"
            :class="[$style.circle,`${$style[`circle-${index}`]}`]"></div>
