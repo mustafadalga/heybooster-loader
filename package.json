@@ -1,6 +1,6 @@
 {
-  "name": "heybooster-loader",
-  "version": "0.0.2",
+  "name": "loading-component",
+  "version": "0.0.1",
   "type": "module",
   "exports": {
     ".": "./dist/index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mustafadalga/heybooster-loader"
+    "url": "https://github.com/mustafadalga/loading-component"
   },
   "files": [
     "dist"
@@ -24,7 +24,8 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "keywords": [
-    "heybooster",
+    "loading-component",
+    "loader-component",
     "loader",
     "loaders",
     "loading",
